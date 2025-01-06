@@ -97,16 +97,12 @@
       display: inline-block;
       transform: translateX(-32px);
 
-      &:nth-child(2) {
-        img {
-          transform: translate(-29px, -8px);
-        }
+      &.eye1 {
+        transform: translate(-69px, 6px);
       }
 
-      &:nth-child(3) {
-        img {
-          transform: translate(-54px, -5px);
-        }
+      &.eye2 {
+        transform: translate(-20px, -8px);
       }
     }
   }
