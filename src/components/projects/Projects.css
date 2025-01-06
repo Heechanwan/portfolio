@@ -13,6 +13,8 @@
   
   .title h2 {
     font-size: 80px;
+    max-height: 200px;
+    height: 200px;
     color: white;
     text-align: center;
     text-transform: uppercase;
