@@ -68,7 +68,7 @@ export default function Projects() {
   return (
     <div className='projects'>
       <div className="title">
-        <h2>Let's L <span className='eyeSpan'><Eye /></span> <span className='eyeSpan'><Eye /></span>K at my Projects</h2>
+        <h2><span> Let's L<span className='fakeOo'>OO</span> <span className='eyeSpan'><Eye /></span> <span className='eyeSpan'><Eye /></span>K at my Projects</span></h2>
       </div>
 
       <div className="cards">

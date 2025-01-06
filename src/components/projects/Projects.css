@@ -19,8 +19,15 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  .fakeOo{
+    opacity: 0;
+  }
   
   .title .eyeSpan {
+    position: absolute;
+    min-height: 100px;
+    display: inline-block;
     img {
       width: 90px;
     }
