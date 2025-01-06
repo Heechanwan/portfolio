@@ -109,13 +109,13 @@ export default function ContactMe() {
                 <h2>DO IT MORE SIMPLE</h2>
                 <div className="blocks">
                     <div className="social">
-                        <a href="">Telegram</a>
+                        <a href="https://t.me/heechanwan">Telegram</a>
                     </div>
                     <div className="social">
-                        <a href="">WhatsApp</a>
+                        <a href="https://wa.me/998338982338">WhatsApp</a>
                     </div>
                     <div className="social">
-                        <a href="">GMAIL</a>
+                        <a href="mailto:hicchancom@gmail.com">GMAIL</a>
                     </div>
                 </div>
             </div>
