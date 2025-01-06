@@ -29,9 +29,9 @@ export default function Eye() {
 
   return (
     <>
-      {eyeState === 0 && <img src="./public/Vector_EYE.png" alt="Open Eye" />}
-      {eyeState === 1 && <img src="./public/Vector_EYE 2.png" alt="Half-Closed Eye" />}
-      {eyeState === 2 && <img src="./public/Vector_EYE 3.png" alt="Closed Eye" />}
+      {eyeState === 0 && <img src="./Vector_EYE.png" alt="Open Eye" />}
+      {eyeState === 1 && <img src="./Vector_EYE 2.png" alt="Half-Closed Eye" />}
+      {eyeState === 2 && <img src="./Vector_EYE 3.png" alt="Closed Eye" />}
     </>
   );
 }
