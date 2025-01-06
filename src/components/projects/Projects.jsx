@@ -30,6 +30,12 @@ export default function Projects() {
       "yellowData": "DEVELOPMENT",
       "link": "https://chinuch20.org/"
     },
+    {
+      "title": "CoolHeat",
+      "purpleData": "Webflow",
+      "yellowData": "DEVELOPMENT",
+      "link": "https://coolheat.webflow.io/"
+    },
   ]);
 
   const sliderRef = useRef(null);
