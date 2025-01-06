@@ -11,5 +11,5 @@ export default defineConfig({
       },
     },
   })],
-  base: "/vite-react-deploy/"
+  base: "/portfolio"
 });
