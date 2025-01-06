@@ -28,6 +28,7 @@
     position: absolute;
     min-height: 100px;
     display: inline-block;
+    transform: translateX(-62px);
     img {
       width: 90px;
     }
@@ -83,5 +84,18 @@
     left: 0;
     top: 0;
     z-index: 1;
+  }
+
+  @media screen and (max-width: 756px) {
+    .eyeSpan img {
+      scale: 0.7;
+    }
+
+    .title .eyeSpan {
+      position: absolute;
+      min-height: 100px;
+      display: inline-block;
+      transform: translateX(-32px);
+    }
   }
   
