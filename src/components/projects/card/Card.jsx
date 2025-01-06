@@ -34,7 +34,7 @@ export default function Card({title, purpleData, yellowData, link}) {
              </div>
            </div>
             <div className="back">
-                <img className="wlaster" src="/public/Wlaster.png" alt="" />
+                <img className="wlaster" src="./Wlaster.png" alt="" />
             </div>
         </div>
     </div>
