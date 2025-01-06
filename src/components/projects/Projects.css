@@ -96,6 +96,18 @@
       min-height: 100px;
       display: inline-block;
       transform: translateX(-32px);
+
+      &:nth-child(2) {
+        img {
+          transform: translate(-29px, -8px);
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          transform: translate(-54px, -5px);
+        }
+      }
     }
   }
   
