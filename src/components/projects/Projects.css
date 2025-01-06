@@ -1,0 +1,78 @@
+.projects {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .title h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .title .eyeSpan {
+    img {
+      width: 90px;
+    }
+  
+    &:nth-child(1) {
+      img {
+        transform: translateY(0px) translateX(-36px) rotate(-25deg);
+      }
+    }
+  
+    &:nth-child(2) {
+      position: absolute;
+  
+      img {
+        transform: translateY(16px) translateX(-80px) rotate(25deg);
+      }
+    }
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 758px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 200%; 
+    gap: 32px;
+    z-index: 2;
+    margin-top: -48px;
+  }
+  
+  .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  .bgYellow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .bgGray {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  

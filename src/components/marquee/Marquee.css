@@ -1,0 +1,30 @@
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee 35s linear infinite;
+    background-color: #FFF800;
+
+    span{
+        font-size: 100px;
+    }
+
+    img{
+        transform: translateY(-16px);
+        margin: 0 24px;
+    }
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  

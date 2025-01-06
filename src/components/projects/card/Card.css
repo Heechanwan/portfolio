@@ -1,0 +1,208 @@
+.projectCard{
+    position: relative;
+    min-width: 536px;
+    width: 100%;
+    height: 326px;
+    display: flex;
+    z-index: 2;
+
+    &:hover{
+        .wlaster{
+            bottom: -50px !important;
+        }
+    }
+    
+
+    .leftSide{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        background-color: #F86DFF;
+        border-radius: 36px 0 0 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s all;
+        
+        &:hover{
+
+            background-color: #FFFC03;
+            
+
+            .eye{
+                img{
+                    animation: chaoticMoves 0.1s infinite linear;
+                    scale: 1.3;
+                    transition: 0.1s;
+                }
+            }
+        }
+     a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 40;
+        cursor: pointer;
+
+        
+     }
+
+    
+
+     .eye{
+        position: absolute;
+        top: 37%;
+        left: 30%;
+        
+        img{
+            position: absolute;
+            width: 120px;
+        }
+
+        &.e1{
+            top: 20px;
+            left: 20px;
+
+            img{
+                width: 90px;
+                transform: rotate(-45deg);
+            }
+        }
+        &.e2{
+            top: 20px;
+            left: unset;
+            right: 110px;
+
+            img{
+                width: 90px;
+                transform: rotate(45deg);
+            }
+        }
+        &.e3{
+            top: unset;
+            bottom: 100px;
+            left: 20px;
+            
+
+            img{
+                width: 90px;
+                transform: rotate(-135deg);
+            }
+        }
+        &.e4{
+            top: unset;
+            bottom: 100px;
+            left: unset;
+            right: 110px;
+            
+
+            img{
+                width: 90px;
+                transform: rotate(135deg);
+            }
+        }
+        &.e5{
+            img{
+                top: -10px;
+            }
+        }
+        &.e6{
+            display: none;
+        }
+     }
+
+    }
+    
+    
+    .rightSide{
+        position: relative;
+        
+        width: 50%;
+        background-color: #242424;
+        border-radius: 0 36px 0 0;
+
+        .inner{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .info{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            span{
+                padding: 12px 20px;
+                border-radius: 36px;
+                font-weight: 200;
+
+                &.purpleData{
+                    border: 1px solid #F86DFF;
+                    color: #F86DFF;
+                }
+                &.yellowData{
+                    border: 1px solid #FFFC03;
+                    color: #FFFC03;
+                }
+            }
+        }
+
+        .title{
+            font-size: 48px;
+            color: white;
+        }
+
+        .wlaster{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 50px;
+            transition: 0.5s all;
+        }
+    }
+}
+
+
+@keyframes chaoticMoves {
+    0%{
+       translate: 0px 0px;
+    }
+    25%{
+        translate: 1px 1px;
+    }
+    50%{
+        translate: -1px -1px;
+    }
+    75%{
+        translate: 1px 1px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+
+@keyframes chaoticMoves2 {
+    0%{
+       translate: 0px 0px;
+    }
+    25%{
+        translate: -1px -1px;
+    }
+    50%{
+        translate: 1px 1px;
+    }
+    75%{
+        translate: -1px -1px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
