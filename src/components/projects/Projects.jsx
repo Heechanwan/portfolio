@@ -72,8 +72,8 @@ export default function Projects() {
           ))}
         </div>
         <div className="bg">
-          <img className='bgGray' src="/public/BG_paper_gray.png" alt="" />
-          <img className='bgYellow' src="/public/BG_paper_yellow.png" alt="" />
+          <img className='bgGray' src="./BG_paper_gray.png" alt="" />
+          <img className='bgYellow' src="./BG_paper_yellow.png" alt="" />
         </div>
       </div>
     </div>

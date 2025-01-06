@@ -7,7 +7,7 @@ export default function Header() {
         <div className="container">
             <div className="leftSide">
                 <div className="bgPaper">
-                    <img className='paperBg' src="/BG_paper.svg" alt="" />
+                    <img className='paperBg' src="./BG_paper.svg" alt="" />
                 </div>
                 <h2>
                     <div>
@@ -29,11 +29,11 @@ export default function Header() {
                 </div>
 
                 <div className="imgBlock">
-                    <img className='mainImg' src="/public/Palaroid.png" alt="" />
-                    <img className="star" src="/public/Star.png" alt="" />
-                    <img className="spray" src="/public/spray.png" alt="" />
-                    <img className='plate plate_1' src="/public/plate.png" alt="" />
-                    <img className='plate plate_2' src="/public/plate.png" alt="" />
+                    <img className='mainImg' src="./Palaroid.png" alt="" />
+                    <img className="star" src="./Star.png" alt="" />
+                    <img className="spray" src="./spray.png" alt="" />
+                    <img className='plate plate_1' src="./plate.png" alt="" />
+                    <img className='plate plate_2' src="./plate.png" alt="" />
                 </div>
 
                 {/* <div className="contactMe">

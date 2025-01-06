@@ -87,11 +87,11 @@ export default function ContactMe() {
       </div>
 
       <div className="figure" ref={figureRef}>
-        <img className='figure f1' ref={f1Ref} src="/public/figure_1.png" alt="" />
-        <img className='figure f2' ref={f2Ref} src="/public/figure_2.png" alt="" />
+        <img className='figure f1' ref={f1Ref} src="./figure_1.png" alt="" />
+        <img className='figure f2' ref={f2Ref} src="./figure_2.png" alt="" />
 
         <div className='bubbleBlock' ref={bubbleRef}>
-          <img className='bubble' src="/public/bubble.png" alt="" />
+          <img className='bubble' src="./bubble.png" alt="" />
           <p ref={textRef}>
             <span>LET’S DO IT MORE SIMPLE!</span>
             <span>LET’S DO IT MORE SIMPLE!</span>
@@ -102,8 +102,8 @@ export default function ContactMe() {
       <div className="mainForm">
         <div className="inner" ref={innerRef}>
             <div className="fbg">
-            <img className='b_1' src="/public/footer/Vector.png" alt="" />
-            <img className='b_2' src="/public/footer/Vector-1.png" alt="" />
+            <img className='b_1' src="./footer/Vector.png" alt="" />
+            <img className='b_2' src="./footer/Vector-1.png" alt="" />
             </div>
             <div className="info">
                 <h2>DO IT MORE SIMPLE</h2>
@@ -121,7 +121,7 @@ export default function ContactMe() {
             </div>
         </div>
         <div className="paperCraft" ref={paperCraftRef}>
-            <img src="/public/PaperCraft.png" alt="" />
+            <img src="./PaperCraft.png" alt="" />
         </div>
       </div>
     </div>

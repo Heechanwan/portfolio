@@ -35,14 +35,14 @@ export default function ClientsSays() {
       </h2>
 
       <div className="images" ref={imagesRef}>
-        <img src="/public/stikers/Group.png" alt="" />
-        <img src="/public/stikers/Group-1.png" alt="" />
-        <img src="/public/stikers/Group-2.png" alt="" />
-        <img src="/public/stikers/Group-3.png" alt="" />
-        <img src="/public/stikers/Group-4.png" alt="" />
-        <img src="/public/stikers/Group-5.png" alt="" />
-        <img src="/public/stikers/Group-6.png" alt="" />
-        <img src="/public/stikers/Group-7.png" alt="" />
+        <img src="./stikers/Group.png" alt="" />
+        <img src="./stikers/Group-1.png" alt="" />
+        <img src="./stikers/Group-2.png" alt="" />
+        <img src="./stikers/Group-3.png" alt="" />
+        <img src="./stikers/Group-4.png" alt="" />
+        <img src="./stikers/Group-5.png" alt="" />
+        <img src="./stikers/Group-6.png" alt="" />
+        <img src="./stikers/Group-7.png" alt="" />
       </div>
     </div>
   );
