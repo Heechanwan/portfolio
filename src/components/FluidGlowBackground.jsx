@@ -7,13 +7,17 @@ export default function FluidGlowBackground() {
     let isMounted = true
     let sceneInstance = null
 
+    const base = import.meta.env.BASE_URL || '/'
+    const jsonPath = `${base}scene.json`.replace('//', '/')
+    const scriptSrc = `${base}unicornStudio.umd.js`.replace('//', '/')
+
     function initUnicorn() {
       if (!window.UnicornStudio || !containerRef.current || !isMounted) return
 
       try {
         window.UnicornStudio.addScene({
           element: containerRef.current,
-          jsonFilePath: '/scene.json',
+          jsonFilePath: jsonPath,
           projectId: 'e8rNGA3o1GVhPu54S5UR',
           dpi: typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 1.25) : 1,
           scale: 1,
@@ -38,7 +42,7 @@ export default function FluidGlowBackground() {
       initUnicorn()
     } else {
       const script = document.createElement('script')
-      script.src = '/unicornStudio.umd.js'
+      script.src = scriptSrc
       script.async = true
       script.onload = () => {
         if (isMounted) initUnicorn()
