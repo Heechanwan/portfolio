@@ -170,7 +170,7 @@ export const articles = [
   {
     title: 'Designing AAC Community App: Streamlining Non-Profit Donor UX',
     desc: 'Deep dive into architecting accessible donation flows, transparent fund-tracking dashboards, and community-first mobile experiences.',
-    image: p('/images/works/AAC/Splash.png'),
+    image: p('/images/works/AAC/AAC_showcase.png'),
     link: 'https://t.me/heechanwan',
   },
 ]
