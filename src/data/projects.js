@@ -165,9 +165,9 @@ export const articles = [
     link: 'https://chinuch20.org/',
   },
   {
-    title: 'Mentoring at IMPACT Academy: Cultivating High-Demand IT Craft',
-    desc: 'How hands-on mentorship, modern design systems, and real-world project delivery accelerate junior developers into seniors.',
-    image: '/images/works/GoodGrade/goodgrade_branding.png',
+    title: 'Designing AAC Community App: Streamlining Non-Profit Donor UX',
+    desc: 'Deep dive into architecting accessible donation flows, transparent fund-tracking dashboards, and community-first mobile experiences.',
+    image: '/images/works/AAC/Home_Page.png',
     link: 'https://t.me/heechanwan',
   },
 ]
