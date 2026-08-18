@@ -149,7 +149,7 @@ export default function Hero() {
                       <img
                         alt="Kuldashev Anwar"
                         className="absolute inset-0 h-full w-full object-cover grayscale contrast-105"
-                        src="/images/photo_bw.jpg"
+                        src={`${import.meta.env.BASE_URL}images/photo_bw.jpg`}
                         decoding="async"
                         fetchPriority="high"
                       />
@@ -165,7 +165,7 @@ export default function Hero() {
                         <img
                           alt="Kuldashev Anwar Colored"
                           className="absolute inset-0 h-full w-full object-cover"
-                          src="/images/photo_colored.jpg"
+                          src={`${import.meta.env.BASE_URL}images/photo_colored.jpg`}
                           decoding="async"
                         />
                       </div>

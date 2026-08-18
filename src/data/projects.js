@@ -1,3 +1,6 @@
+const BASE = import.meta.env.BASE_URL || '/'
+const p = (path) => `${BASE}${path.replace(/^\//, '')}`
+
 export const projects = [
   {
     id: 'aiquest',
@@ -6,10 +9,10 @@ export const projects = [
     year: '2025–2026',
     description: 'Full turnkey web platform with interactive AI training programs, dynamic assessment flows, and responsive UI for a London-based AI tech initiative.',
     badge: 'Live',
-    image: '/images/works/AIQUEST/Landing_page-design.jpg',
+    image: p('/images/works/AIQUEST/Landing_page-design.jpg'),
     hoverImages: [
-      '/images/works/AIQUEST/Is_Your_Workforce_Ready_for_AI.jpg',
-      '/images/works/AIQUEST/Bespoke_Training_program.jpg',
+      p('/images/works/AIQUEST/Is_Your_Workforce_Ready_for_AI.jpg'),
+      p('/images/works/AIQUEST/Bespoke_Training_program.jpg'),
     ],
     link: 'https://ai-quest.co.uk/',
     column: 'left',
@@ -22,9 +25,9 @@ export const projects = [
     year: '2025–2026',
     description: 'Turnkey development featuring custom external payment architecture, resilient 3rd-party API integrations, automated anti-bot cybersecurity & DDoS protection.',
     badge: 'Live',
-    image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+    image: p('/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg'),
     hoverImages: [
-      '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+      p('/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg'),
     ],
     link: 'https://chinuch20.org/',
     column: 'right',
@@ -38,7 +41,7 @@ export const projects = [
     description: 'Turnkey real estate catalog & portal with complex multi-criteria property filtering for new developments, handed over to corporate management.',
     note: '(Current maintenance is managed by client)',
     badge: 'Live',
-    image: '/images/works/TENCORP/Landing.png',
+    image: p('/images/works/TENCORP/Landing.png'),
     hoverImages: [],
     link: 'https://tencorp.uz/',
     column: 'left',
@@ -51,7 +54,7 @@ export const projects = [
     year: '2025–2026',
     description: 'Complete brand overhaul, modern visual identity system, and ongoing strategic media content design partnership for an education brand.',
     badge: 'Partner',
-    image: '/images/works/GoodGrade/goodgrade_branding.png',
+    image: p('/images/works/GoodGrade/goodgrade_branding.png'),
     hoverImages: [],
     link: null,
     column: 'right',
@@ -64,10 +67,10 @@ export const projects = [
     year: '2025',
     description: 'Playful and modern e-commerce interface design, multi-level category navigation, and responsive product showcase layouts.',
     badge: 'Design',
-    image: '/images/works/LilPengyu/Home.png',
+    image: p('/images/works/LilPengyu/Home.png'),
     hoverImages: [
-      '/images/works/LilPengyu/Category.png',
-      '/images/works/LilPengyu/Product_listing.png',
+      p('/images/works/LilPengyu/Category.png'),
+      p('/images/works/LilPengyu/Product_listing.png'),
     ],
     link: null,
     column: 'left',
@@ -80,10 +83,10 @@ export const projects = [
     year: '2025',
     description: 'Clean SaaS web interface, component-based layout design, FAQ modules, and streamlined user onboarding & sign-up flows.',
     badge: 'Design',
-    image: '/images/works/Vebsto/Home.png',
+    image: p('/images/works/Vebsto/Home.png'),
     hoverImages: [
-      '/images/works/Vebsto/FAQ.png',
-      '/images/works/Vebsto/Sign_up.png',
+      p('/images/works/Vebsto/FAQ.png'),
+      p('/images/works/Vebsto/Sign_up.png'),
     ],
     link: null,
     column: 'right',
@@ -96,7 +99,7 @@ export const projects = [
     year: '2025',
     description: 'Turnkey healthcare web portal and user flow architecture tailored for seamless patient interaction and accessible medical services.',
     badge: 'Turnkey',
-    image: '/images/works/REFUAH/FOR_JOSH.png',
+    image: p('/images/works/REFUAH/FOR_JOSH.png'),
     hoverImages: [],
     link: null,
     column: 'left',
@@ -138,13 +141,13 @@ export const services = [
 ]
 
 export const slideshowItems = [
-  { image: '/images/works/AIQUEST/Landing_page-design.jpg', projectId: 'aiquest', title: 'AiQuest Platform' },
-  { image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg', projectId: 'chinuch', title: 'Chinuch 2.0' },
-  { image: '/images/works/TENCORP/Landing.png', projectId: 'tencorp', title: 'Tencorp Real Estate' },
-  { image: '/images/works/GoodGrade/goodgrade_branding.png', projectId: 'goodgrade', title: 'GoodGrade School' },
-  { image: '/images/works/LilPengyu/Home.png', projectId: 'lilpengyu', title: 'LilPengyu Brand Store' },
-  { image: '/images/works/Vebsto/Home.png', projectId: 'vebsto', title: 'Vebsto SaaS' },
-  { image: '/images/works/REFUAH/FOR_JOSH.png', projectId: 'refuah', title: 'Refuah Healthcare' },
+  { image: p('/images/works/AIQUEST/Landing_page-design.jpg'), projectId: 'aiquest', title: 'AiQuest Platform' },
+  { image: p('/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg'), projectId: 'chinuch', title: 'Chinuch 2.0' },
+  { image: p('/images/works/TENCORP/Landing.png'), projectId: 'tencorp', title: 'Tencorp Real Estate' },
+  { image: p('/images/works/GoodGrade/goodgrade_branding.png'), projectId: 'goodgrade', title: 'GoodGrade School' },
+  { image: p('/images/works/LilPengyu/Home.png'), projectId: 'lilpengyu', title: 'LilPengyu Brand Store' },
+  { image: p('/images/works/Vebsto/Home.png'), projectId: 'vebsto', title: 'Vebsto SaaS' },
+  { image: p('/images/works/REFUAH/FOR_JOSH.png'), projectId: 'refuah', title: 'Refuah Healthcare' },
 ]
 
 export const slideshowImages = slideshowItems.map(item => item.image)
@@ -153,7 +156,7 @@ export const articles = [
   {
     title: '10+ Years of Fullstack Engineering: From Monoliths to AI Agents',
     desc: 'Reflecting on a decade of architectural shifts, workflow automations, and engineering turnkey web applications that scale.',
-    image: '/images/works/AIQUEST/Landing_page-design.jpg',
+    image: p('/images/works/AIQUEST/Landing_page-design.jpg'),
     badge: true,
     badgeText: '10+ Years',
     link: 'https://ai-quest.co.uk/',
@@ -161,13 +164,13 @@ export const articles = [
   {
     title: 'Hardening Custom Payment Gateways & Anti-Bot Cybersecurity',
     desc: 'Key strategies for implementing resilient 3rd-party payment APIs, rate-limiting, and defense layers against automated threats.',
-    image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+    image: p('/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg'),
     link: 'https://chinuch20.org/',
   },
   {
     title: 'Designing AAC Community App: Streamlining Non-Profit Donor UX',
     desc: 'Deep dive into architecting accessible donation flows, transparent fund-tracking dashboards, and community-first mobile experiences.',
-    image: '/images/works/AAC/Splash.png',
+    image: p('/images/works/AAC/Splash.png'),
     link: 'https://t.me/heechanwan',
   },
 ]
