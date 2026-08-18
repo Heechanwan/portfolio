@@ -1,20 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import 'tailwindcss';
 
-
-:root{
-  font-family: 'Oswald';
-  --main: #101010;
-  --yellow: #FFFC03;
-  --pink: #F86DFF;
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --color-bg: #121417;
+  --color-text: #EDEDED;
+  --color-text-muted: #888;
+  --color-border: rgba(255, 255, 255, 0.1);
 }
 
-*{
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+* {
   box-sizing: border-box;
 }
-
-a{
-  text-decoration: none;
+@media (hover: hover) and (pointer: fine) {
+  *,
+  *::before,
+  *::after,
+  html,
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label,
+  [role="button"],
+  [data-cursor],
+  .cursor-pointer,
+  .cursor-default {
+    cursor: none !important;
+  }
 }
 
+html.custom-cursor-active,
+html.custom-cursor-active *,
+html.custom-cursor-active *::before,
+html.custom-cursor-active *::after {
+  cursor: none !important;
+}
+::selection {
+  background: rgba(174, 168, 254, 0.3);
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #EBE1B0 -86.53%, #AEA8FE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.img-skeleton {
+  background: #1a1c20;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes borderRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes diceTumble {
+  0% {
+    transform: perspective(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
+  }
+  25% {
+    transform: perspective(600px) rotateX(180deg) rotateY(90deg) rotateZ(180deg) scale(1.15);
+  }
+  50% {
+    transform: perspective(600px) rotateX(360deg) rotateY(270deg) rotateZ(360deg) scale(0.9);
+  }
+  75% {
+    transform: perspective(600px) rotateX(540deg) rotateY(450deg) rotateZ(540deg) scale(1.2);
+  }
+  100% {
+    transform: perspective(600px) rotateX(720deg) rotateY(720deg) rotateZ(720deg) scale(1);
+  }
+}
+
+@keyframes fluidOrb1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(40%, 30%, 0) scale(1.15) rotate(50deg);
+  }
+  66% {
+    transform: translate3d(15%, 55%, 0) scale(0.92) rotate(110deg);
+  }
+  100% {
+    transform: translate3d(50%, 10%, 0) scale(1.1) rotate(180deg);
+  }
+}
+
+@keyframes fluidOrb2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(-35%, -25%, 0) scale(1.14) rotate(-45deg);
+  }
+  66% {
+    transform: translate3d(-10%, -50%, 0) scale(0.9) rotate(-90deg);
+  }
+  100% {
+    transform: translate3d(-45%, -15%, 0) scale(1.18) rotate(-150deg);
+  }
+}
+
+@keyframes fluidOrb3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-30%, 35%, 0) scale(1.2);
+  }
+  100% {
+    transform: translate3d(-50%, -15%, 0) scale(0.88);
+  }
+}

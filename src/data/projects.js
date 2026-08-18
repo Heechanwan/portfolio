@@ -1,0 +1,173 @@
+export const projects = [
+  {
+    id: 'aiquest',
+    title: 'AiQuest Platform',
+    client: 'UK Client',
+    year: '2025–2026',
+    description: 'Full turnkey web platform with interactive AI training programs, dynamic assessment flows, and responsive UI for a London-based AI tech initiative.',
+    badge: 'Live',
+    image: '/images/works/AIQUEST/Landing_page-design.jpg',
+    hoverImages: [
+      '/images/works/AIQUEST/Is_Your_Workforce_Ready_for_AI.jpg',
+      '/images/works/AIQUEST/Bespoke_Training_program.jpg',
+    ],
+    link: 'https://ai-quest.co.uk/',
+    column: 'left',
+    category: 'Turnkey Fullstack • UK',
+  },
+  {
+    id: 'chinuch',
+    title: 'Chinuch 2.0 Platform',
+    client: 'UK Client',
+    year: '2025–2026',
+    description: 'Turnkey development featuring custom external payment architecture, resilient 3rd-party API integrations, automated anti-bot cybersecurity & DDoS protection.',
+    badge: 'Live',
+    image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+    hoverImages: [
+      '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+    ],
+    link: 'https://chinuch20.org/',
+    column: 'right',
+    category: 'Turnkey • Security & Fintech • UK',
+  },
+  {
+    id: 'tencorp',
+    title: 'Tencorp Real Estate',
+    client: 'Uzbekistan',
+    year: '2025–2026',
+    description: 'Turnkey real estate catalog & portal with complex multi-criteria property filtering for new developments, handed over to corporate management.',
+    note: '(Current maintenance is managed by client)',
+    badge: 'Live',
+    image: '/images/works/TENCORP/Landing.png',
+    hoverImages: [],
+    link: 'https://tencorp.uz/',
+    column: 'left',
+    category: 'Turnkey Platform • Real Estate',
+  },
+  {
+    id: 'goodgrade',
+    title: 'GoodGrade School',
+    client: 'Uzbekistan',
+    year: '2025–2026',
+    description: 'Complete brand overhaul, modern visual identity system, and ongoing strategic media content design partnership for an education brand.',
+    badge: 'Partner',
+    image: '/images/works/GoodGrade/goodgrade_branding.png',
+    hoverImages: [],
+    link: null,
+    column: 'right',
+    category: 'Branding & Media Direction',
+  },
+  {
+    id: 'lilpengyu',
+    title: 'LilPengyu Brand Store',
+    client: 'UK Client',
+    year: '2025',
+    description: 'Playful and modern e-commerce interface design, multi-level category navigation, and responsive product showcase layouts.',
+    badge: 'Design',
+    image: '/images/works/LilPengyu/Home.png',
+    hoverImages: [
+      '/images/works/LilPengyu/Category.png',
+      '/images/works/LilPengyu/Product_listing.png',
+    ],
+    link: null,
+    column: 'left',
+    category: 'E-Commerce UX/UI • UK',
+  },
+  {
+    id: 'vebsto',
+    title: 'Vebsto SaaS',
+    client: 'UK Client',
+    year: '2025',
+    description: 'Clean SaaS web interface, component-based layout design, FAQ modules, and streamlined user onboarding & sign-up flows.',
+    badge: 'Design',
+    image: '/images/works/Vebsto/Home.png',
+    hoverImages: [
+      '/images/works/Vebsto/FAQ.png',
+      '/images/works/Vebsto/Sign_up.png',
+    ],
+    link: null,
+    column: 'right',
+    category: 'Web & UI System • UK',
+  },
+  {
+    id: 'refuah',
+    title: 'Refuah Health Portal',
+    client: 'UK Client',
+    year: '2025',
+    description: 'Turnkey healthcare web portal and user flow architecture tailored for seamless patient interaction and accessible medical services.',
+    badge: 'Turnkey',
+    image: '/images/works/REFUAH/FOR_JOSH.png',
+    hoverImages: [],
+    link: null,
+    column: 'left',
+    category: 'Turnkey Healthcare • UK',
+  },
+]
+
+export const services = [
+  {
+    num: '01',
+    title: 'Turnkey Fullstack Web Apps',
+    desc: '10+ years of building robust end-to-end web applications, custom WooCommerce/WordPress solutions, scalable backend architectures, and high-performance React frontends.',
+  },
+  {
+    num: '02',
+    title: 'UX/UI & Design Direction',
+    desc: 'Senior Fullstack & Co-UX/UI Designer at Briktobrick agency (Spain). Designing thoughtful design systems, intuitive user flows, and aesthetic digital interfaces that convert.',
+  },
+  {
+    num: '03',
+    title: 'Cybersecurity & Defenses',
+    desc: 'Advanced bot protection, DDoS mitigation, custom payment gateway hardening, API vulnerability audits, and secure authentication pipelines for commercial platforms.',
+  },
+  {
+    num: '04',
+    title: 'AI Agent Workflows',
+    desc: 'Autonomous multi-agent orchestration, LLM pipeline integrations, RAG systems, and custom workflow automations designed to solve complex business operations.',
+  },
+  {
+    num: '05',
+    title: 'Game Dev (Godot Engine)',
+    desc: 'Interactive 2D/3D physics, game loops, shader programming, and procedural mechanics built using Godot Engine with performance-optimized GDScript/C#.',
+  },
+  {
+    num: '06',
+    title: 'IT Mentorship (IMPACT Academy)',
+    desc: 'Dedicated mentor at IMPACT Academy, guiding aspiring and junior engineers across fullstack web development, modern frontend tools, and cybersecurity best practices.',
+  },
+]
+
+export const slideshowItems = [
+  { image: '/images/works/AIQUEST/Landing_page-design.jpg', projectId: 'aiquest', title: 'AiQuest Platform' },
+  { image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg', projectId: 'chinuch', title: 'Chinuch 2.0' },
+  { image: '/images/works/TENCORP/Landing.png', projectId: 'tencorp', title: 'Tencorp Real Estate' },
+  { image: '/images/works/GoodGrade/goodgrade_branding.png', projectId: 'goodgrade', title: 'GoodGrade School' },
+  { image: '/images/works/LilPengyu/Home.png', projectId: 'lilpengyu', title: 'LilPengyu Brand Store' },
+  { image: '/images/works/Vebsto/Home.png', projectId: 'vebsto', title: 'Vebsto SaaS' },
+  { image: '/images/works/REFUAH/FOR_JOSH.png', projectId: 'refuah', title: 'Refuah Healthcare' },
+]
+
+export const slideshowImages = slideshowItems.map(item => item.image)
+
+export const articles = [
+  {
+    title: '10+ Years of Fullstack Engineering: From Monoliths to AI Agents',
+    desc: 'Reflecting on a decade of architectural shifts, workflow automations, and engineering turnkey web applications that scale.',
+    image: '/images/works/AIQUEST/Landing_page-design.jpg',
+    badge: true,
+    badgeText: '10+ Years',
+    link: 'https://ai-quest.co.uk/',
+  },
+  {
+    title: 'Hardening Custom Payment Gateways & Anti-Bot Cybersecurity',
+    desc: 'Key strategies for implementing resilient 3rd-party payment APIs, rate-limiting, and defense layers against automated threats.',
+    image: '/images/works/CHOMESH/Chomesh_v2__Card_payment__Reclaim_gift_aid_selected.jpg',
+    link: 'https://chinuch20.org/',
+  },
+  {
+    title: 'Mentoring at IMPACT Academy: Cultivating High-Demand IT Craft',
+    desc: 'How hands-on mentorship, modern design systems, and real-world project delivery accelerate junior developers into seniors.',
+    image: '/images/works/GoodGrade/goodgrade_branding.png',
+    link: 'https://t.me/heechanwan',
+  },
+]

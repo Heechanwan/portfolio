@@ -1,15 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react({
-    jsx: {
-      transform: {
-        react: {
-          throwIfNamespace: false, // Отключить проверку пространств имен
-        },
-      },
-    },
-  })],
-  base: "/portfolio"
-});
+  base: './',
+  plugins: [react(), tailwindcss()],
+})
