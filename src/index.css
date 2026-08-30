@@ -114,13 +114,13 @@ html.custom-cursor-active *::after {
     transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
   }
   33% {
-    transform: translate3d(40%, 30%, 0) scale(1.15) rotate(50deg);
+    transform: translate3d(35%, 25%, 0) scale(1.15) rotate(45deg);
   }
   66% {
-    transform: translate3d(15%, 55%, 0) scale(0.92) rotate(110deg);
+    transform: translate3d(15%, 50%, 0) scale(0.92) rotate(100deg);
   }
   100% {
-    transform: translate3d(50%, 10%, 0) scale(1.1) rotate(180deg);
+    transform: translate3d(45%, 10%, 0) scale(1.1) rotate(180deg);
   }
 }
 
@@ -129,13 +129,13 @@ html.custom-cursor-active *::after {
     transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
   }
   33% {
-    transform: translate3d(-35%, -25%, 0) scale(1.14) rotate(-45deg);
+    transform: translate3d(-30%, -20%, 0) scale(1.14) rotate(-40deg);
   }
   66% {
-    transform: translate3d(-10%, -50%, 0) scale(0.9) rotate(-90deg);
+    transform: translate3d(-10%, -45%, 0) scale(0.9) rotate(-85deg);
   }
   100% {
-    transform: translate3d(-45%, -15%, 0) scale(1.18) rotate(-150deg);
+    transform: translate3d(-40%, -15%, 0) scale(1.16) rotate(-140deg);
   }
 }
 
@@ -144,9 +144,84 @@ html.custom-cursor-active *::after {
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(-30%, 35%, 0) scale(1.2);
+    transform: translate3d(-25%, 30%, 0) scale(1.18);
   }
   100% {
-    transform: translate3d(-50%, -15%, 0) scale(0.88);
+    transform: translate3d(-45%, -12%, 0) scale(0.9);
   }
+}
+
+@keyframes shrinkWidth {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes blackoutWipeAndReveal {
+  0% {
+    clip-path: circle(0% at var(--origin-x, 95vw) var(--origin-y, 95vh));
+  }
+  42% {
+    /* Full screen engulfed in deep black */
+    clip-path: circle(160% at var(--origin-x, 95vw) var(--origin-y, 95vh));
+  }
+  58% {
+    /* Hold in total black while state switches cleanly */
+    clip-path: circle(160% at var(--origin-x, 95vw) var(--origin-y, 95vh));
+  }
+  100% {
+    /* Smoothly pulls back into origin, revealing the modified site */
+    clip-path: circle(0% at var(--origin-x, 95vw) var(--origin-y, 95vh));
+  }
+}
+
+@keyframes chromaticRingPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.001);
+    opacity: 1;
+  }
+  42% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  58% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.001);
+    opacity: 0;
+  }
+}
+
+@keyframes originGlow {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+@layer utilities {
+  .contain-paint {
+    contain: paint;
+  }
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 580px;
+  }
+}
+
+/* GPU Hardware Layer Compositing for Zero-Lag WebGL Fluid Canvas */
+[data-us-project] canvas {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
 }

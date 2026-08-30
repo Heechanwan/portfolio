@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Lenis from 'lenis'
+import { FXProvider } from './context/FXContext'
 import CustomCursor from './components/CustomCursor'
 import FluidGlowBackground from './components/FluidGlowBackground'
 import Preloader from './components/Preloader'
@@ -12,6 +13,41 @@ import KindWords from './components/KindWords'
 import Articles from './components/Articles'
 import ContactCTA from './components/ContactCTA'
 import Footer from './components/Footer'
+import FXToggleButton from './components/FXToggleButton'
+import FXShockwaveOverlay from './components/FXShockwaveOverlay'
+
+function MainContent({ loaded, setLoaded }) {
+  return (
+    <>
+      {/* Directional water bow-wave forward glow */}
+      <FluidGlowBackground />
+
+      {!loaded && <Preloader onComplete={() => setLoaded(true)} />}
+
+      <div className="relative z-10">
+        <Header />
+
+        <main>
+          <Hero />
+          <Slideshow />
+          <SelectedWork />
+          <WhatIDo />
+          <KindWords />
+          <Articles />
+          <ContactCTA />
+        </main>
+
+        <Footer />
+      </div>
+
+      {/* Tactile FX Toggle Icon Button at Bottom Right */}
+      <FXToggleButton />
+
+      {/* Fullscreen Optical Liquid Light Shockwave */}
+      <FXShockwaveOverlay />
+    </>
+  )
+}
 
 export default function App() {
   const [loaded, setLoaded] = useState(false)
@@ -40,30 +76,11 @@ export default function App() {
   }, [])
 
   return (
-    <>
-      {/* Sleek ring cursor with negative difference fill & arrow on hover */}
+    <FXProvider>
+      {/* Sleek dynamic cursor with interactive living Eye & directional arrows */}
       <CustomCursor />
 
-      {/* Directional water bow-wave forward glow */}
-      <FluidGlowBackground />
-
-      {!loaded && <Preloader onComplete={() => setLoaded(true)} />}
-
-      <div className="relative z-10">
-        <Header />
-
-        <main>
-          <Hero />
-          <Slideshow />
-          <SelectedWork />
-          <WhatIDo />
-          <KindWords />
-          <Articles />
-          <ContactCTA />
-        </main>
-
-        <Footer />
-      </div>
-    </>
+      <MainContent loaded={loaded} setLoaded={setLoaded} />
+    </FXProvider>
   )
 }

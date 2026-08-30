@@ -73,10 +73,13 @@ export default function Header() {
                 data-cursor="pointer"
                 className="inline-flex h-9 items-center gap-1.5 rounded-full border border-white/40 bg-white/5 px-3.5 text-[12px] uppercase tracking-[0.08em] leading-none transition-all duration-150 hover:border-white active:scale-[0.96]"
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="shrink-0">
                   <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.95 9.18c-.15.65-.53.81-1.08.51l-2.98-2.2-1.44 1.38c-.16.16-.29.29-.6.29l.21-3.04 5.53-5c.24-.21-.05-.33-.37-.12l-6.84 4.31-2.94-.92c-.64-.2-.65-.64.13-.95l11.49-4.43c.53-.2 1 .13.84.99z" />
                 </svg>
-                @heechanwan
+                <span className="inline-flex items-center">
+                  <span className="relative -top-[0.5px] font-sans opacity-70">@</span>
+                  <span>heechanwan</span>
+                </span>
               </a>
               <a
                 href="mailto:hicchancom@gmail.com"
